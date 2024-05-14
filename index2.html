@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Delivery Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <main class="dashboard">
+      <article class="restaurant-panel">
+        <nav class="nav-bar">
+          <a href="#" class="menu"></a>
+          <a href="#" class="title">Hungry!!</a>
+          <div class="search-bar">
+            <div class="input-group">
+              <button class="btn">
+              </button>
+              <input type="search" class="form-control" name="search" placeholder="Search" />
+            </div>
+          </div>
+        </nav>
+        <header class="welcome-banner">
+          <h1>£0 delivery for 30 days!  🎉</h1>
+          <p>£0 delivery fee for orders over £10 for 30 days</p>
+          <a href="#" class="learn-more">Learn more</a>
+        </header>
+        <section class="section" id="restaurants">
+          <div class="section-titles">
+            <div class="section-title">Restaurants 🍔</div>
+            <button class="btn btn-danger btn-round date-select">
+            </button>
+          </div>
+          <div class="categories">
+            <ul class="category-list">
+              <li class="category-list__item" id="all">
+                <a href="#all">
+                  <div class="category-icon">
+                  </div>
+                  <div class="category-name">All</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="pizza">
+                <a href="#pizza">
+                  <div class="category-icon">
+                  </div>
+                  <div class="category-name">Pizza</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="asian">
+                <a href="#asian">
+                  <div class="category-icon">
+                    
+                  </div>
+                  <div class="category-name">Asian</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="burgers">
+                <a href="#burgers">
+                  <div class="category-icon">
+                    
+                  </div>
+                  <div class="category-name">Burgers</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="bbq">
+                <a href="#bbq">
+                  <div class="category-icon">
+                    
+                  </div>
+                  <div class="category-name">Barbecue</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="dessers">
+                <a href="#dessers">
+                  <div class="category-icon">
+                    
+                  </div>
+                  <div class="category-name">Dessers</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="thai">
+                <a href="#thai">
+                  <div class="category-icon">
+                    
+                  </div>
+                  <div class="category-name">Thai</div>
+                </a>
+              </li>
+              <li class="category-list__item" id="sushi">
+                <a href="#sushi">
+                  <div class="category-icon">
+                    
+                  </div>
+                  <div class="category-name">Sushi</div>
+                </a>
+              </li>
+            </ul>
+            <div class="category-more">
+              <button class="btn btn-secondary category-more-btn">
+                
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <ul class="restaurant-list">
+            <li class="restaurant-list__item">
+              <a href="#"><img class="restaurant-image" src="https://i.loli.net/2020/04/06/ZOsdvCkE6jDN8Ka.png" /></a>
+              <div class="restaurant-name">Bagel Story</div>
+              <div class="restaurant-info">
+                <span class="restaurant-rate">4.7</span>
+                <span class="restaurant-category">Deli · Bagels · ££</span>
+              </div>
+            </li>
+            <li class="restaurant-list__item">
+              <a href="#"><img class="restaurant-image" src="https://i.loli.net/2020/04/06/67ruCzS8WYONoUp.png" /></a>
+              <div class="restaurant-name">The Estaminet</div>
+              <div class="restaurant-info">
+                <span class="restaurant-rate">4.5</span>
+                <span class="restaurant-category">Cafes · Creperies · £</span>
+              </div>
+            </li>
+            <li class="restaurant-list__item">
+              <a href="#"><img class="restaurant-image" src="https://i.loli.net/2020/04/06/Hqn6217mSUCbQ8d.png" /></a>
+              <div class="restaurant-name">Le Paris Dakar</div>
+              <div class="restaurant-info">
+                <span class="restaurant-rate">4.7</span>
+                <span class="restaurant-category">Creperies · Sandwich · ££</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="order-panel">
+        <header class="user-info">
+         
+          <button class="btn btn-warning buy-count">3</button>
+        </header>
+        <section class="section" id="order">
+          <div class="section-title">My Order 😎</div>
+          <div class="order-info">
+            <div class="address">
+              <div class="address-name">625 St Marks Ave</div>
+              <a href="#" class="address-edit">Edit</a>
+            </div>
+            <div class="delivery">
+              <div class="delivery-time">
+                <button class="btn time-btn">
+                 
+                </button>
+                <span class="time">35min</span>
+              </div>
+              <a href="#" class="delivery-choose-time">Choose time</a>
+            </div>
+          </div>
+          <ul class="food-list">
+            <li class="food-list__item">
+              <img class="food-image" src="https://i.loli.net/2020/04/06/7oZgORNCnGE5qhU.png" />
+              <div class="food-buy-amount">1 x</div>
+              <div class="food-name">Beach BBQBurger</div>
+              <div class="food-price">£14.99</div>
+            </li>
+            <li class="food-list__item">
+              <img class="food-image" src="https://i.loli.net/2020/04/06/EZJyVICMS6GYueL.png" />
+              <div class="food-buy-amount">1 x</div>
+              <div class="food-name">French Fries</div>
+              <div class="food-price">£9.99</div>
+            </li>
+            <li class="food-list__item">
+              <img class="food-image" src="https://i.loli.net/2020/04/06/pIWNyMlqCSZiLtr.png" />
+              <div class="food-buy-amount">1 x</div>
+              <div class="food-name">Cheese Sauce</div>
+              <div class="food-price">£0.99</div>
+            </li>
+            <li class="food-list__item">
+              <img class="food-image" src="https://i.loli.net/2020/04/06/BN2JIuHAC6Gh3eR.png" />
+              <div class="food-name">Delivery</div>
+              <div class="food-price">£0.00</div>
+            </li>
+          </ul>
+          <div class="total-price">
+            <div class="total">Total:</div>
+            <div class="price">£25.97</div>
+          </div>
+          <div class="buy-action">
+            <div class="person-number-input">
+              <div class="persons">Persons</div>
+              <div class="input-group input-spinner">
+                <button class="btn minus" onclick="document.querySelector('#count').value--">
+                  
+                </button>
+                <input type="text" readonly value="0" class="form-control" id="count" />
+                <button class="btn plus" onclick="document.querySelector('#count').value++">
+                  
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-warning checkout-btn">Checkout</button>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

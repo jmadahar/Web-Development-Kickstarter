@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Boilerplate HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Driveria </title>
+
+    <!-- Google Fonts -->
+    <!-- DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <!-- Open Sans, Medium 500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap SS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding-top: 70px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .navbar-logo {
+            max-height: 80px;
+        }
+
+        header {
+            background-color: #fff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbarNav{
+            font-family: 'DM Sans', sans-serif; 
+            padding-right: 20px; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .second-hero-section {
+            background-color: #f0f0f0;
+            padding: 50px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .instructions-container {
+            width: 100%;
+            background: linear-gradient(to bottom, #F0B934, #fff0e0);
+            color: #373737;
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            font-family: 'DM Sans', sans-serif; 
+            padding: 100px 0; 
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .instruction-step {
+            flex: 0 0 auto;
+            width: 300px; 
+            margin-right: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .instruction-step img {
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md navbar-white bg-white fixed-top">
+            <div class="container">
+
+                <!-- Website Logo -->
+                <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Company Logo" class="navbar-logo"></a>
+
+                <!-- Navbar Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ORDER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-search"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg> SEARCH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+    </header>
+
+    <!-- Main body of the website -->
+    <!-- 1st container -->
+
+    <div class="background-container" id="background-container">
+        <div class="container">
+
+            <h2><br>Hungry?</h2>
+            <p><strong>In Just a Few Clicks, Find Hot, Tasty Meals Near You!</strong></p>
+            <div id="search-box">
+                <div id="search-tool">
+                    <input type="text" id="searchInput" placeholder="Enter Your Address...">
+                    <div class="button-options">
+                        <!-- Bootstrap for Delivery (bi bi-bicycle)-->
+                        <button onclick="selectOption('option1')"><i class="bi bi-bicycle"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bicycle" viewBox="0 0 16 16">
+                            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/></svg> Delivery</button>
+                            <!-- Bootstrap for Pickup (bi-bag-fill) -->
+                            <button onclick="selectOption('option2')"><i class="bi bi-bag-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/></svg> Pickup</button>
+                    </div>
+                    <button onclick="performSearch()">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Purchase instructions  -->
+    <div class="instructions-container">
+        <div class="instruction-step">
+          <img src="images/step1.png" alt="Step 1 Icon">
+          <h3>Select Location</h3>
+          <p>Select a restaurant near you <br> based on our wide selection.</p>
+          <a href="index 2.html" class="button">See Restaurants Here</a>
+        </div>
+
+        <div class="instruction-step">
+          <img src="images/step2.png" alt="Step 2 Icon">
+          <h3>Order Food You Like</h3>
+          <p>Click on your favorite items <br> to add them to your cart.</p>
+        </div>
+
+        <div class="instruction-step">
+          <img src="images/step3.png" alt="Step 2 Icon">
+          <h3>Pay In Advance</h3>
+          <p>Swift, secure, and safe. <br> Checkout using your preferred <br> payment method. </p>
+        </div>
+
+        <div class="instruction-step">
+          <img src="images/step4.png" alt="Step 4 Icon">
+          <h3>Enjoy Your Meal</h3>
+          <p>Pickup or delivery? <br> Whatever you choose, a delicious <br> meal awaits you. </p>
+        </div>
+    </div>
+
+    <!-- 2nd Hero Section -->
+
+    <div class="second-hero-section">
+        <h2>Second Hero Section</h2>
+        <!-- Add your content for the hero section here -->
+    </div>
+
+    <!-- Footer (where locations will go)-->
+
+    <footer>
+        <p>&copy; 2023 Website Name. All rights reserved. Insert all locations. </p>
+    </footer>
+
+</body>
+
+</html>
